@@ -10,6 +10,6 @@ public class Elephant extends Actor
 {
     public void act()
     {
-        move(7);
+        move(1);
     }
 }

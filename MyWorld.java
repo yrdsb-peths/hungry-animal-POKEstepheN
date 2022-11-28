@@ -14,5 +14,10 @@ public class MyWorld extends World
         super(600, 400, 1);
         Elephant e=new Elephant();
         addObject(e, 100, 200);
+        
+        Apple a=new Apple();
+        int x=getWidth()/2;
+        int y=10;
+        addObject(a, x, y);
     }
 }
