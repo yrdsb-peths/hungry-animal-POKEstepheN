@@ -18,5 +18,14 @@ public class Elephant extends Actor
         {
             move(-2);
         }
+        eat();
+    }
+    
+    public void eat()
+    {
+        if(isTouching(Apple.class))
+        {
+            removeTouching(Apple.class);
+        }
     }
 }
