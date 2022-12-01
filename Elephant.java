@@ -12,11 +12,19 @@ public class Elephant extends Actor
     {
         if(Greenfoot.isKeyDown("d"))
         {
-            move(2);
+            setLocation(getX()+5, getY());
         }
         if(Greenfoot.isKeyDown("a"))
         {
-            move(-2);
+            setLocation(getX()-5, getY());
+        }
+        if(Greenfoot.isKeyDown("w"))
+        {
+            setLocation(getX(), getY()-5);
+        }
+        if(Greenfoot.isKeyDown("s"))
+        {
+            setLocation(getX(), getY()+5);
         }
         eat();
     }
