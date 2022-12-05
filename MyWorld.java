@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
+    public int score=0;
+    public Label scoreLabel;
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -15,7 +17,15 @@ public class MyWorld extends World
         Elephant e=new Elephant();
         addObject(e, 100, 200);
         
+        scoreLabel=new Label(score, 80);
+        addObject(scoreLabel, 50, 50);
+        
         spawnApple();
+    }
+    public void increaseScore()
+    {
+        score++;
+        scoreLabel.setValue(score);
     }
     public void spawnApple()
     {
