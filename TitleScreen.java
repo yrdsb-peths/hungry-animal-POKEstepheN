@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TitleScreen here.
+ * The titlescreen displays the beginning screen of the game
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Stephen Liu 
+ * December 6, 2022
  */
 public class TitleScreen extends World
 {

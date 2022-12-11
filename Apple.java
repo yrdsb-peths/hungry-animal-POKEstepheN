@@ -1,20 +1,22 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Apple here.
+ * This is the object the elephant is trying to eat (touch).
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Stephen Liu
+ * November 28, 2022
  */
 public class Apple extends Actor
 {
     int speed=1;
     public void act()
     {
+        //Makes the apple fall
         int x=getX();
         int y=getY()+speed;
         setLocation(x, y);
         
+        //Makes the apple disappear and display game over if apple touches ground
         int bottomY=getWorld().getHeight();
         if(getY()>bottomY)
         {
@@ -24,6 +26,7 @@ public class Apple extends Actor
         }
     }
     
+    //Sets the speed the apple falls
     public void setSpeed(int spd)
     {
         speed=spd;
