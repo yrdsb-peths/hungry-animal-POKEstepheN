@@ -34,7 +34,7 @@ public class TitleScreen extends World
     {
         Elephant elephant = new Elephant();
         addObject(elephant,485,109);
-        Label label = new Label("Press <Space> to begin", 40);
+        Label label = new Label("Press \u2190 Space \u2192 to begin", 40);
         addObject(label,296,297);
     }
 }
