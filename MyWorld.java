@@ -11,7 +11,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     public int score=0;
+    public int lives=3;
     public Label scoreLabel;
+    public Label lifeLabel;
     int level=1;
     
     public MyWorld()
@@ -26,6 +28,10 @@ public class MyWorld extends World
         //Create score counter
         scoreLabel=new Label(score, 80);
         addObject(scoreLabel, 50, 50);
+        
+        //Create life counter
+        lifeLabel=new Label("Lives: "+lives, 80);
+        addObject(lifeLabel, 450, 340);
         
         spawnApple();
     }
@@ -48,6 +54,13 @@ public class MyWorld extends World
         {
             level++;
         }
+    }
+    
+    //The life counter decreases each time the apple touch the ground
+    public void decreaseLife()
+    {
+        lives--;
+        lifeLabel.setValue("Lives: "+lives);
     }
     
     //A new apple appears at the top of the window

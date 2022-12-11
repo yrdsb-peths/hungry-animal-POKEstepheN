@@ -15,14 +15,24 @@ public class Apple extends Actor
         int x=getX();
         int y=getY()+speed;
         setLocation(x, y);
-        
-        //Makes the apple disappear and display game over if apple touches ground
+
         int bottomY=getWorld().getHeight();
         if(getY()>bottomY)
         {
             MyWorld world=(MyWorld) getWorld();
-            world.gameOver();
             world.removeObject(this);
+            if(world.lives>1)
+            {
+                //Decreases the number of lives
+                world.decreaseLife();
+                world.spawnApple();
+            }
+            else
+            {
+                //Makes the apple disappear and display game over
+                world.decreaseLife();
+                world.gameOver();
+            }
         }
     }
     
