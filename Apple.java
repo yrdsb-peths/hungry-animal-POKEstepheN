@@ -17,7 +17,6 @@ public class Apple extends Actor
         setLocation(x, y);
 
         int bottomY=getWorld().getHeight();
-        //Occurs when the apple touches the bottom of the screen
         if(getY()>bottomY)
         {
             MyWorld world=(MyWorld) getWorld();
