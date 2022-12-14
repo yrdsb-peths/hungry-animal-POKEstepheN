@@ -13,7 +13,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Label extends Actor
 {
-    //Create text to display on the screen
     private String value;
     private int fontSize;
     private Color lineColor = Color.BLACK;

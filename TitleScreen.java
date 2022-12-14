@@ -19,7 +19,6 @@ public class TitleScreen extends World
 
     public void act()
     {
-        //Change screen when the user presses space
         if(Greenfoot.isKeyDown("space"))
         {
             MyWorld world=new MyWorld();
@@ -33,7 +32,6 @@ public class TitleScreen extends World
      */
     private void prepare()
     {
-        
         Elephant elephant = new Elephant();
         addObject(elephant,485,109);
         Label label = new Label("Press \u2190 Space \u2192 to begin", 40);
