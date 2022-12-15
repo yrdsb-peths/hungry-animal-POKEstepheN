@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Apple
+comment0.text=\r\n\ This\ is\ the\ object\ the\ elephant\ is\ trying\ to\ eat\ (touch).\r\n\ \r\n\ Stephen\ Liu\r\n\ November\ 28,\ 2022\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=spd
+comment2.target=void\ setSpeed(int)
+numComments=3
